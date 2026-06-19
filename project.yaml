@@ -56,7 +56,7 @@ narrative:
     epa_subgrid_name: NY (NYCW)
     occupancy: '6'
     subregion_name: NY (NYCW)
-    taget_co2_per_person: '1.0'
+    taget_co2_per_person: 1.0
     target_tons: '6'
   energy_code:
     ach_limit: '3.0'
