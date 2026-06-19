@@ -2,9 +2,9 @@ schema_version: 0.2.0
 slug: project-2610
 project_title: Manhattan Retrofit
 client_name: Bespoke Architecture
-building_name: '-'
+building_name: Manhattan Retrofit
 phase: Design Phase Analysis
-report_date: '2026-06-11'
+report_date: '2026-06-19'
 prepared_by: bldgtyp, llc
 contact_email: ed@bldgtyp.com
 target_standard: TBD
@@ -12,15 +12,15 @@ certification_program: TBD
 certification_path: TBD
 recommended_variant_id: null
 building:
-  address: TBD
-  city: TBD
-  state: TBD
-  climate_zone: TBD
-  building_type: TBD
-  total_num_occupants: null
+  address: '-'
+  city: Brooklyn
+  state: NY
+  climate_zone: ASHRAE 4A
+  building_type: single-family residential
+  total_num_occupants: 6
 source_files:
   phpp_path: ../07_PHPP/2610-Scott-Ward-260610.xlsx
-  cad_files_received_date: null
+  cad_files_received_date: June 1, 2026
   data_dir: data
   assets_dir: public/assets
 publishing:
@@ -28,54 +28,53 @@ publishing:
   cloudflare_pages_project: bt-proj-2610-manhattan-retrofit
 narrative:
   certification:
-    target: null
-    ph_ach_limit: null
-    phi_lcd_limit: null
-    enph_hd_limit: null
-    enph_per_limit: null
-    enph_bg_limit: null
-    enph_ag_ext_limit: null
-    enph_ag_int_limit: null
-    enph_uw_limit: null
-    phius_hd_limit: null
-    phius_cd_limit: null
-    phius_hl_limit: null
-    phius_cl_limit: null
-    phius_nse_limit: null
-    phius_cfm50_limit: null
+    enph_ag_ext_limit: ''
+    enph_ag_int_limit: ''
+    enph_bg_limit: ''
+    enph_hd_limit: ''
+    enph_per_limit: ''
+    enph_uw_limit: ''
+    ph_ach_limit: '1.0'
+    phi_lcd_limit: ''
+    phius_cd_limit: ''
+    phius_cfm50_limit: ''
+    phius_cl_limit: ''
+    phius_hd_limit: ''
+    phius_hl_limit: ''
+    phius_nse_limit: ''
+    target: EnerPHit by Demand
   climate:
-    weather_station_name: null
-    weather_station_url: null
-    state_name: null
-    state_name_abbreviation: null
-    ashrae_location_name: null
-    ashrae_design_temps: null
-    ashrae_winter_design_temp_F: null
-    ashrae_winter_design_temp_C: null
-  energy_code:
-    name: null
-    zone: null
-    link: null
-    code_base_url: null
-    code_airtightness_url: null
-    u_val_link: null
-    ach_link: null
-    ach_limit: null
-    window_min_u_value: null
+    ashrae_design_temps: ''
+    ashrae_location_name: Zone 4(A)
+    ashrae_winter_design_temp_C: '-12.0'
+    ashrae_winter_design_temp_F: '10.4'
+    state_name: New York
+    state_name_abbreviation: NY
+    weather_station_name: 'New_York_J_F_Kennedy_IntL_Ar :: 744860 :: TMY3'
+    weather_station_url: https://energyplus-weather.s3.amazonaws.com/north_and_central_america_wmo_region_4/USA/NY/USA_NY_New.York-J.F.Kennedy.Intl.AP.744860_TMY3/USA_NY_New.York-J.F.Kennedy.Intl.AP.744860_TMY3.zip
   co2:
-    subregion_name: null
-    epa_subgrid_name: null
-    occupancy: null
-    target_tons: null
-    taget_co2_per_person: null
-  windows:
-    ph_window_u_value: null
-    ph_window_r_value: null
-    comfort_target_r_value: null
-    comfort_target_u_value: null
+    epa_subgrid_name: NY (NYCW)
+    occupancy: '6'
+    subregion_name: NY (NYCW)
+    taget_co2_per_person: '1.0'
+    target_tons: '6'
+  energy_code:
+    ach_limit: '3.0'
+    ach_link: https://up.codes/viewer/new_york_city/nyc-energy-conservation-code-2025/chapter/R4/residential-energy-efficiency#R402.5.1.3
+    code_airtightness_url: https://up.codes/viewer/new_york_city/nyc-energy-conservation-code-2025/chapter/R4/residential-energy-efficiency#R402.5.1.3
+    code_base_url: https://up.codes/viewer/new_york_city/nyc-energy-conservation-code-2025
+    link: https://up.codes/viewer/new_york_city/nyc-energy-conservation-code-2025
+    name: NYC Energy Code 2025
+    u_val_link: https://up.codes/viewer/new_york_city/nyc-energy-conservation-code-2025/chapter/R4/residential-energy-efficiency#R402.1.3
+    window_min_u_value: https://up.codes/viewer/new_york_city/nyc-energy-conservation-code-2025/chapter/R4/residential-energy-efficiency#R402.6
+    zone: Zone 4(A)
   mechanical:
     erv:
-      manufacturer_name: null
-      type_name: null
-      link: null
-  user_defined: {}
+      link: ''
+      manufacturer_name: Zehnder America
+      type_name: ComfoAir 650
+  windows:
+    comfort_target_r_value: '5.6'
+    comfort_target_u_value: '0.18'
+    ph_window_r_value: ''
+    ph_window_u_value: ''

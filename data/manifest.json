@@ -1,9 +1,55 @@
 {
-  "status": "pending",
-  "project": {
-    "slug": "0000-example-report",
-    "name": "Example Passive House Report"
-  },
-  "schema_version": "0.1.0",
-  "variants": []
+  "schema_version": "1.0.0",
+  "phpp_version": "10.6",
+  "generated_at": "2026-06-11T12:54:24.440505Z",
+  "generator": "btwr@0.0.1",
+  "status": "ok",
+  "variants": [
+    {
+      "id": "code_minimum",
+      "name": "Code Minimum",
+      "order": 0,
+      "color": "auto",
+      "recommended": false,
+      "source_column": "G"
+    },
+    {
+      "id": "improved_envelope",
+      "name": "Improved Envelope",
+      "order": 1,
+      "color": "auto",
+      "recommended": false,
+      "source_column": "H"
+    },
+    {
+      "id": "improved_mech_system",
+      "name": "Improved Mech. System",
+      "order": 2,
+      "color": "auto",
+      "recommended": false,
+      "source_column": "I"
+    },
+    {
+      "id": "enerphit_by_component",
+      "name": "EnerPHit By Component",
+      "order": 3,
+      "color": "auto",
+      "recommended": false,
+      "source_column": "J"
+    },
+    {
+      "id": "enerphit_by_demand",
+      "name": "EnerPHit by Demand",
+      "order": 4,
+      "color": "auto",
+      "recommended": true,
+      "source_column": "K"
+    }
+  ],
+  "recommended_variant_id": "enerphit_by_demand",
+  "source_workbook": {
+    "path": "/Users/em/Dropbox/bldgtyp/2610 Scott-Ward/07_PHPP/2610-Scott-Ward-260610.xlsx",
+    "sha256": "c857a791505a4d247638ff4ad9ee99f39e1ea02e51b01c32e3c6a419dad75681",
+    "size_bytes": 13300834
+  }
 }
